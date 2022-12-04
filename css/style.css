@@ -1,0 +1,786 @@
+/* line 1, ../project/src/sass/style.sass */
+* {
+  font-family: 'Roboto', serif;
+  margin: 0;
+}
+
+/* line 1, ../project/src/sass/_general.sass */
+* body {
+  background: #efd2f9b8;
+  width: 100%;
+}
+
+/* line 4, ../project/src/sass/_general.sass */
+* a {
+  text-decoration: none;
+  color: #f9f8f8;
+}
+
+/* line 8, ../project/src/sass/_general.sass */
+* header {
+  display: flex;
+  position: relative;
+  height: 50px;
+}
+
+/* line 13, ../project/src/sass/_general.sass */
+* nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 21, ../project/src/sass/_general.sass */
+* nav .hamburger {
+  display: none;
+}
+
+/* line 23, ../project/src/sass/_general.sass */
+* nav .nav_box {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 27, ../project/src/sass/_general.sass */
+* nav .menu {
+  display: flex;
+  min-width: 50px;
+  margin: 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 34, ../project/src/sass/_general.sass */
+* nav .menu_item {
+  padding-left: 50px;
+}
+
+/* line 37, ../project/src/sass/_general.sass */
+* nav .menu_item:first-child {
+  padding-left: 0;
+  margin-left: 9px;
+}
+
+/* line 41, ../project/src/sass/_general.sass */
+* nav .menu_link {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.07;
+  text-align: center;
+  color: #DA6A00;
+}
+
+/* line 48, ../project/src/sass/_general.sass */
+* nav .soc {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 54, ../project/src/sass/_general.sass */
+* nav .soc_icons {
+  padding-right: 50px;
+}
+
+/* line 57, ../project/src/sass/_general.sass */
+* nav .soc_icons:last-child {
+  padding-right: 0;
+  margin-right: 122px;
+}
+
+/* line 61, ../project/src/sass/_general.sass */
+* .subheader {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  margin: 0;
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 69, ../project/src/sass/_general.sass */
+* .subheader_logo {
+  min-width: 100%;
+  margin: 0;
+}
+
+/* line 73, ../project/src/sass/_general.sass */
+* .subheader_text {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #FDBF6E;
+  margin-top: 13px;
+}
+
+/* line 80, ../project/src/sass/_general.sass */
+* .subheader_phon {
+  line-height: 32px;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  color: #f9f8f8;
+}
+
+/* line 87, ../project/src/sass/_general.sass */
+* .subheader_btn {
+  width: 170px;
+  height: 45px;
+  border-radius: 3px;
+  border: solid 0 #000;
+  background-image: linear-gradient(to top, #2c097ecf, #f394069e);
+  margin-top: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 0.5;
+  text-align: center;
+  color: #f9f8f8;
+}
+
+/* line 24, ../project/src/sass/_mixins.sass */
+* .subheader_btn:hover {
+  background-image: none;
+  background-color: #c07d26;
+}
+
+/* line 101, ../project/src/sass/_general.sass */
+* .promo {
+  background: url("../img/house.jpg") center center/cover no-repeat;
+}
+
+/* line 104, ../project/src/sass/_general.sass */
+* .promo h1 {
+  font-size: 74px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 109, ../project/src/sass/_general.sass */
+* .promo_header {
+  font-size: 83px;
+  font-weight: 1000;
+  text-align: start;
+  color: #540070;
+  line-height: 60px;
+  margin: 0;
+  margin-top: 213px;
+}
+
+/* line 118, ../project/src/sass/_general.sass */
+* .promo_subheader {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: start;
+  line-height: 76px;
+  color: #872684;
+  margin: 0;
+  margin-top: 76px;
+}
+
+/* line 126, ../project/src/sass/_general.sass */
+* .promo_btn {
+  width: 260px;
+  height: 60px;
+  border-radius: 4px;
+  border: solid 0 #000;
+  background-image: linear-gradient(to top, #2c097ecf, #f394069e);
+  margin: 108px 0 83px 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: #f9f8f8;
+}
+
+/* line 24, ../project/src/sass/_mixins.sass */
+* .promo_btn:hover {
+  background-image: none;
+  background-color: #c07d26;
+}
+
+/* line 141, ../project/src/sass/_general.sass */
+* .benefits .container {
+  background: #9E8279;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* line 147, ../project/src/sass/_general.sass */
+* .benefits_question {
+  background-image: linear-gradient(to top, #BC2041, #FDBF6E);
+  max-width: 462px;
+  max-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 30px;
+  color: #f9f8f8;
+  border-radius: 4px;
+}
+
+/* line 160, ../project/src/sass/_general.sass */
+* .benefits_text {
+  max-width: 445px;
+  font-size: 26px;
+  text-align: left;
+  color: #f9f8f8;
+  margin-top: 40px;
+}
+
+/* line 167, ../project/src/sass/_general.sass */
+* .benefits_btn {
+  width: 177px;
+  height: 45px;
+  margin: 75px 0 20px 0;
+  border: solid 0 #000;
+  background-image: linear-gradient(to top, #2c097ecf, #f394069e);
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px black;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #f9f8f8;
+}
+
+/* line 24, ../project/src/sass/_mixins.sass */
+* .benefits_btn:hover {
+  background-image: none;
+  background-color: #c07d26;
+}
+
+/* line 181, ../project/src/sass/_general.sass */
+* .gallery {
+  width: 100%;
+  padding-top: 10px;
+}
+
+/* line 185, ../project/src/sass/_general.sass */
+* .gallery_img {
+  width: 100%;
+  height: 356px;
+  background: url("../img/electrik.jpg") center center/cover no-repeat;
+  margin: 20px auto;
+}
+
+/* line 191, ../project/src/sass/_general.sass */
+* .footer {
+  margin-top: 15px;
+  background-color: #666465;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #f9f8f8;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #f9f8f8;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.67;
+  text-align: left;
+  color: #f9f8f8;
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+/* line 203, ../project/src/sass/_general.sass */
+* .xs-visible {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  /* line 4, ../project/src/sass/_media.sass */
+  * nav .menu_item {
+    padding-left: 30px;
+  }
+  /* line 6, ../project/src/sass/_media.sass */
+  * nav .menu_item:first-child {
+    margin-left: 90px;
+  }
+  /* line 8, ../project/src/sass/_media.sass */
+  * nav .menu_link {
+    font-size: 15px;
+  }
+  /* line 12, ../project/src/sass/_media.sass */
+  * nav .soc_icons {
+    padding-right: 35px;
+  }
+  /* line 15, ../project/src/sass/_media.sass */
+  * nav .soc_icons:last-child {
+    margin-right: 0;
+    margin-right: 100px;
+  }
+  /* line 21, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    width: 100%;
+  }
+  /* line 23, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    line-height: 24px;
+    font-size: 24px;
+  }
+  /* line 26, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+  }
+  /* line 32, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 58px;
+  }
+  /* line 34, ../project/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 40px;
+    line-height: 59px;
+    margin-top: 45px;
+  }
+  /* line 38, ../project/src/sass/_media.sass */
+  * .promo_btn {
+    width: 184px;
+    height: 40px;
+    font-size: 16px;
+  }
+  /* line 44, ../project/src/sass/_media.sass */
+  * .benefits_question {
+    font-size: 25px;
+    padding: 5px 0;
+  }
+  /* line 47, ../project/src/sass/_media.sass */
+  * .benefits_text {
+    font-size: 22px;
+  }
+  /* line 51, ../project/src/sass/_media.sass */
+  * .gallery_img {
+    width: 100%;
+    height: 296px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  /* line 58, ../project/src/sass/_media.sass */
+  * nav .menu_item {
+    padding-left: 30px;
+  }
+  /* line 60, ../project/src/sass/_media.sass */
+  * nav .menu_item:first-child {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 66, ../project/src/sass/_media.sass */
+  * nav .soc_icons:last-child {
+    margin-right: 54px;
+  }
+  /* line 70, ../project/src/sass/_media.sass */
+  * .subheader_text {
+    margin-top: 4px;
+  }
+  /* line 72, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    width: 160px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 82, ../project/src/sass/_media.sass */
+  * nav .menu_item {
+    padding-left: 20px;
+  }
+  /* line 84, ../project/src/sass/_media.sass */
+  * nav .menu_item:first-child {
+    margin-left: 10px;
+  }
+  /* line 86, ../project/src/sass/_media.sass */
+  * nav .menu_link {
+    font-size: 15px;
+  }
+  /* line 90, ../project/src/sass/_media.sass */
+  * nav .soc_icons {
+    padding-right: 35px;
+  }
+  /* line 93, ../project/src/sass/_media.sass */
+  * nav .soc_icons:last-child {
+    margin-right: 0;
+    margin-right: 6px;
+  }
+  /* line 97, ../project/src/sass/_media.sass */
+  * .subheader {
+    height: 65px;
+  }
+  /* line 100, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    width: 100%;
+  }
+  /* line 103, ../project/src/sass/_media.sass */
+  * .subheader_text {
+    margin-top: 5px;
+    font-size: 13px;
+  }
+  /* line 106, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    font-size: 20px;
+  }
+  /* line 108, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    width: 140px;
+    height: 33px;
+    font-size: 13px;
+    margin-top: 12px;
+    margin-left: 57px;
+  }
+  /* line 116, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 46px;
+  }
+  /* line 118, ../project/src/sass/_media.sass */
+  * .promo h2 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 45px;
+  }
+  /* line 124, ../project/src/sass/_media.sass */
+  * .benefits_question {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  /* line 127, ../project/src/sass/_media.sass */
+  * .benefits_text {
+    font-size: 20px;
+  }
+  /* line 129, ../project/src/sass/_media.sass */
+  * .benefits_btn {
+    width: 155px;
+    height: 33px;
+    font-size: 13px;
+  }
+  /* line 135, ../project/src/sass/_media.sass */
+  * .gallery_img {
+    width: 100%;
+    height: 216px;
+  }
+  /* line 139, ../project/src/sass/_media.sass */
+  * .footer {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 145, ../project/src/sass/_media.sass */
+  * .nav_box .soc {
+    display: none;
+  }
+  /* line 148, ../project/src/sass/_media.sass */
+  * .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 160, ../project/src/sass/_media.sass */
+  * .menu_active {
+    left: 0;
+  }
+  /* line 163, ../project/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 167, ../project/src/sass/_media.sass */
+  * .menu_item a {
+    color: #ffffff;
+  }
+  /* line 170, ../project/src/sass/_media.sass */
+  * .menu_link {
+    font-style: 20px;
+  }
+  /* line 173, ../project/src/sass/_media.sass */
+  * nav .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 12px;
+  }
+  /* line 181, ../project/src/sass/_media.sass */
+  * nav .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 189, ../project/src/sass/_media.sass */
+  * nav .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 191, ../project/src/sass/_media.sass */
+  * nav .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 193, ../project/src/sass/_media.sass */
+  * nav .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 195, ../project/src/sass/_media.sass */
+  * nav .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 200, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    padding-top: 3px;
+    width: 100%;
+  }
+  /* line 203, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    width: 142px;
+    height: 27px;
+    font-size: 14px;
+    margin-top: 13px;
+    margin-left: 236px;
+  }
+  /* line 209, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    display: block;
+    margin-top: 10px;
+    line-height: 0;
+  }
+  /* line 215, ../project/src/sass/_media.sass */
+  * .benefits_question {
+    font-size: 18px;
+    padding: 0;
+    max-width: 240px;
+  }
+  /* line 219, ../project/src/sass/_media.sass */
+  * .benefits_text {
+    font-size: 16px;
+  }
+  /* line 222, ../project/src/sass/_media.sass */
+  * .xs-hidden {
+    display: none;
+  }
+  /* line 224, ../project/src/sass/_media.sass */
+  * .xs-visible {
+    display: block;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* line 234, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    padding-top: 4px;
+    width: 100%;
+  }
+  /* line 237, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    position: relative;
+    margin-top: 4px;
+    width: 118px;
+    height: 25px;
+    font-size: 13px;
+    right: -26px;
+  }
+  /* line 244, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    margin-top: 10px;
+    line-height: 11px;
+    font-size: 15px;
+    margin-right: 5px;
+    text-align: right;
+  }
+  /* line 251, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 33px;
+  }
+  /* line 253, ../project/src/sass/_media.sass */
+  * .promo h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 8px;
+    margin-left: 16px;
+  }
+  /* line 258, ../project/src/sass/_media.sass */
+  * .promo_btn {
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  /* line 266, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    padding-top: 6px;
+    width: 100%;
+  }
+  /* line 269, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+    width: 118px;
+    height: 25px;
+    font-size: 13px;
+    right: 59px;
+  }
+  /* line 277, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    margin-top: 10px;
+    line-height: 11px;
+    font-size: 15px;
+    margin-right: 5px;
+    text-align: right;
+  }
+  /* line 284, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 41px;
+    margin-top: 140px;
+    line-height: 38px;
+  }
+  /* line 288, ../project/src/sass/_media.sass */
+  * .promo h2 {
+    font-size: 23px;
+    line-height: 28px;
+    margin-top: 33px;
+    margin-left: 31px;
+  }
+  /* line 293, ../project/src/sass/_media.sass */
+  * .promo_btn {
+    width: 170px;
+    height: 36px;
+    font-size: 16px;
+    margin: 24px;
+  }
+  /* line 300, ../project/src/sass/_media.sass */
+  * .benefits_question {
+    font-size: 19px;
+    padding: 0;
+    max-width: 256px;
+  }
+  /* line 304, ../project/src/sass/_media.sass */
+  * .benefits_text {
+    font-size: 16px;
+    text-align: left;
+    color: #f9f8f8;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* line 312, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    padding-top: 11px;
+  }
+  /* line 314, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    margin-top: 7px;
+    width: 118px;
+    height: 25px;
+    font-size: 13px;
+    right: 121px;
+  }
+  /* line 321, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 37px;
+    margin-top: 140px;
+    line-height: 38px;
+  }
+  /* line 326, ../project/src/sass/_media.sass */
+  * .gallery_img {
+    margin: 8px auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* line 332, ../project/src/sass/_media.sass */
+  * .subheader_logo img {
+    padding-top: 4px;
+    width: 100%;
+  }
+  /* line 335, ../project/src/sass/_media.sass */
+  * .subheader_phon {
+    margin-top: 0px;
+    line-height: 0px;
+    font-size: 15px;
+    margin-right: 1px;
+    text-align: right;
+  }
+  /* line 341, ../project/src/sass/_media.sass */
+  * .subheader_btn {
+    position: relative;
+    margin-top: 10px;
+    width: 118px;
+    height: 25px;
+    font-size: 13px;
+    right: 135px;
+  }
+  /* line 350, ../project/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 83px;
+    font-weight: 1000;
+    text-align: start;
+    color: #540070;
+    line-height: 37px;
+    margin: 0;
+    margin-top: 126px;
+  }
+  /* line 358, ../project/src/sass/_media.sass */
+  * .promo h1 {
+    font-size: 37px;
+    margin-top: 140px;
+    line-height: 38px;
+  }
+  /* line 363, ../project/src/sass/_media.sass */
+  * .promo h2 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 23px;
+    margin-left: 16px;
+  }
+  /* line 368, ../project/src/sass/_media.sass */
+  * .promo_btn {
+    width: 206px;
+    height: 40px;
+    font-size: 18px;
+    margin: 45px;
+  }
+  /* line 375, ../project/src/sass/_media.sass */
+  * nav .menu {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
