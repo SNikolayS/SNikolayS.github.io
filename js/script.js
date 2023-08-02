@@ -1,17 +1,62 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu'),
-    menuItem = document.querySelectorAll('.menu_item'),
-    hamburger = document.querySelector('.hamburger');
+// import animate from "./modules/animat";
+import { isValidName, isValidEmail, isValidPhone } from './form.js';
 
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('hamburger_active');
-        menu.classList.toggle('menu_active');
+window.addEventListener('DOMContentLoaded', () => {
+    "use strict";
+
+
+
+
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+
+        if (!isValidName(name)) {
+            alert('Пожалуйста, введите корректное имя.');
+            return;
+        }
+
+        if (!isValidEmail(email)) {
+            alert('Пожалуйста, введите корректный почтовый ящик.');
+            return;
+        }
+
+        if (!isValidPhone(phone)) {
+            alert('Пожалуйста, введите корректный номер телефона (10 цифр).');
+            return;
+        }
+
+        // Все данные корректны, отправляем форму на сервер
+        const data = {
+            name: name,
+            email: email,
+            phone: phone
+        };
+
+        // Отправка данных на сервер с помощью fetch()
+        fetch('URL_СЕРВЕРА', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => response.json())
+            .then(data => {
+                alert('Данные успешно отправлены на сервер.');
+                form.reset();
+            })
+            .catch(error => {
+                alert('Произошла ошибка при отправке данных на сервер.');
+                console.error(error);
+            });
     });
 
-    menuItem.forEach(item => {
-        item.addEventListener('click', () => {
-            hamburger.classList.toggle('hamburger_active');
-            menu.classList.toggle('menu_active');
-        })
-    })
-})
+});
+
+
